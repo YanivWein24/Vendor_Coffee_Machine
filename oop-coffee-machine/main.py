@@ -5,6 +5,7 @@ from art import logo
 
 
 def main():
+    admin_password = "1234"  # used in refill()
 
     # Create an object for each class we will use
     menu = Menu()
@@ -34,7 +35,7 @@ def main():
             coffee_maker.report()
             money_machine.report()
         elif order == "refill":
-            coffee_maker.resources = coffee_maker.refill()
+            coffee_maker.resources = coffee_maker.refill(admin_password)
         else:
             drink = menu.find_drink(order)
             # find_drink() returns the drink in a MenuItem object if typed correctly, or else returns None

@@ -67,7 +67,7 @@ def check_resources(resources, order_ingredients):
     return True
 
 
-def refill(resources):
+def refill(resources, password):
     """Receives the Machine's resources. Returns a full stock if stock is not full"""
     full_resources = {
         "water": 600,
@@ -82,7 +82,7 @@ def refill(resources):
             confirmation = input(
                 "\nTo continue, please enter the administrator password: "
             ).lower()
-            if confirmation == "2402":
+            if confirmation == password:
                 print("\n* Stock refilled! *")
                 return full_resources
                 # break
@@ -154,6 +154,7 @@ def menu(menu):
 
 
 def main():
+    admin_password = "1234"  # used in refill()
     resources = {
         "water": 600,
         "milk": 250,
@@ -181,7 +182,7 @@ def main():
         elif order == "report":
             report(resources)
         elif order == "refill":
-            resources = refill(resources)
+            resources = refill(resources, admin_password)
         elif (
             order != "espresso"
             and order != "latte"

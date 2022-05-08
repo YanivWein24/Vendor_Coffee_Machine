@@ -40,7 +40,7 @@ class CoffeeMaker:
             self.resources[item] -= drink.ingredients[item]
         print(f"Here is your {drink.name} ☕️. Enjoy!\n")
 
-    def refill(self):
+    def refill(self, password):
         """Receives the Machine's resources. Returns a full stock if stock is not full"""
         full_resources = {
             "water": 600,
@@ -55,7 +55,7 @@ class CoffeeMaker:
                 confirmation = input(
                     "\nTo continue, please enter the administrator password: "
                 ).lower()
-                if confirmation == "2402":
+                if confirmation == password:
                     print("\n* Stock refilled! *")
                     return full_resources
                     # break
