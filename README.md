@@ -1,4 +1,4 @@
-## Coffee_Machine_Python
+## Vendor_Coffee_Machine
 The machine offers 4 kinds of drinks: Espresso, Latte, Cappuccino, and Americano!  
 Each drink have its own ingredients and price.  
 The machine can count the money and return change, alert for insufficient resources, refill (using `admin password`),  
