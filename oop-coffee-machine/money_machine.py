@@ -8,7 +8,7 @@ class MoneyMachine:
 
     def report(self):
         """Prints the current profit"""
-        print(f"\n* Total amount of money: {self.profit}")
+        print(f"\n* Total amount of money: ${self.profit}")
 
     def process_coins(self, cost):
         """Returns the total calculated from coins inserted."""
