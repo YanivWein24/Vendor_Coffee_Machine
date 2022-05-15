@@ -13,8 +13,8 @@
 ## *Features :*
 * 4 Different types of coffee beverages
 * Resource control - check the machine's stock, and refill at any time! (refill is protected with administrator password)
-* If one or more ingredients is insufficient, the machine will abort from making coffee and ask for a stock refill.
-* Money machine - calculates the received coins and checks if the amount if sufficient. returns change if necessary.
+* If one or more ingredients is insufficient, the machine will abort from making coffee and ask the operator for a stock refill.
+* Money machine - calculates the received coins and checks if the amount is sufficient. returns change if necessary.
 * Support Quarters, Dimes, Nickles and Pennis as inputs.
 <br>  
   
